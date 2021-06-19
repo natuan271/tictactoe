@@ -4,6 +4,7 @@ import Board from './Board'
 import CurrentPlayer from './CurrentPlayer'
 import MoveReCord from './MoveReCord'
 import NextRound from './NextRound'
+import BestOfRoundComboBox from './BestOfRoundComboBox'
 import Popup from './Popup'
 import ParticlesBg from "particles-bg";
 
@@ -28,6 +29,7 @@ function Game() {
   const [countRound, setCountRound] = useState(1)
   const [notification,setNotification] = useState("")
   const [isTimeUp,setIsTimeUp]=useState(false)
+  const [BestOfRound, setBestOfRound] = useState(1)
   const initMatrix = []
   for (let i=0; i<10; i++){
       initMatrix[i] = []
@@ -153,6 +155,9 @@ function Game() {
             notification={notification}
             winner={winner}
             scores={scores}
+            player1={setPlayer1}
+            player2={setPlayer2}
+            BestOfRound={setBestOfRound}
           />
           
           )

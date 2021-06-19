@@ -26,7 +26,7 @@ export default function CurrentPlayer({
     <div className="left-bar">
         <h2 id="turn">Player turn:</h2>
         <div className="player-info">
-          <h2 style={{ color: '#ea243e' }} className={player==='X' ? 'now-player':'player'}>{playerNameA}</h2>       
+          <h2 style={{ color: 'red' }} className={player==='X' ? 'now-player':'player'}>{playerNameA}</h2>       
           <div class="icon-left">
             <div class="svg-container">
               <svg
@@ -48,7 +48,7 @@ export default function CurrentPlayer({
           <CountdownTime counter={playerTimeA} setCounter={setPlayerTimeA} isYourTurn={player === 'X'?true:false}></CountdownTime>
         </div>
         <div className="player-info">
-          <h2 style={{ color: '#4b9f82' }}className={player=='X' ? 'player':'now-player'}>{playerNameB}</h2>
+          <h2 style={{ color: 'green' }}className={player=='X' ? 'player':'now-player'}>{playerNameB}</h2>
           <div class="icon-left">
             <div class="svg-container">
               <svg

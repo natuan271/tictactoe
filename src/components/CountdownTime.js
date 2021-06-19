@@ -8,8 +8,8 @@ function CountdownTime(props) {
     return () => clearInterval(timer);
   }, [props.counter,props.isYourTurn]);
   return (
-    <div className="App">
-      <div className="time-remaining">Remaining: <span style={{fontWeight: "bold"}}>{props.counter}</span></div>
+    <div className="">
+      <div className="time-remaining">Time: <span style={{fontWeight: "bold"}}>{props.counter}</span></div>
     </div>
   );
 }

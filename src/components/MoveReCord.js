@@ -13,7 +13,7 @@ export default function MoveReCord({
         <div className="move-records">
         {moveRecords.map((record, index) => (
           <p  style={{textAlign: 'left', paddingLeft:'6%', paddingRight:'6%'}} className={index % 2 === 0 ? "move-records-o" : "move-records-x"}>
-          <span>{index%2 === 0 ? playerNameB : playerNameA}</span><span style={{float:'right',}}><i class="fas fa-long-arrow-alt-right"></i>&emsp;{record[0]+1}-{chars[record[1]]}</span>
+          <span>{index%2 === 0 ? playerNameB : playerNameA}</span><span style={{float:'right',}}><i class="fas fa-long-arrow-alt-right"></i>&nbsp;{record[0]+1}-{chars[record[1]]}</span>
           </p>
         ))}
       </div>
